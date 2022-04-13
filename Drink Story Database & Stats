@@ -1,0 +1,23 @@
+CREATE TABLE drink_store
+(id INTEGER PRIMARY KEY, name TEXT, price INTEGER, rating INTEGER, availability TEXT);
+
+INSERT INTO drink_store VALUES
+
+(1, "pepsi", 1.29, 7, "yes"),
+(2, "coke", 1.29, 5, "yes"),
+(3, "dr.pepper", 1.29, 5, "no"),
+(4, "fanta", 1.29, 6, "no"),
+(5, "mnt dew", 1.29, 7, "yes"),
+(6, "sprite", 1.29, 4, "yes"),
+(7, "7 up", 1.29, 4, "no"),
+(8, "monster", 2.08, 8, "yes"),
+(9, "rockstar", 1.98, 7, "yes"),
+(10, "bang energy", 2.08, 2, "yes"),
+(11, "rootbeer", 1.29, 6, "no"),
+(12, "sunkist", 1.29, 5, "yes"),
+(13, "ginger ale", .88, 5, "yes"),
+(14, "water", 1.11, 9, "yes"),
+(15, "HI-C", 1.98, 7, "yes");
+
+SELECT SUM(price) FROM drink_store;
+SELECT price, availability, name FROM drink_store ORDER BY availability
